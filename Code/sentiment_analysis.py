@@ -79,8 +79,8 @@ def getLexicon(msgs_train, msgs_test):
     e = loadl(fol + 'loughran_uncertainty.tsv')
     t = loadl(fol + 'loughran_modal.tsv')
     q = loadl(fol + 'loughran_harvard.tsv')
-    p_pos, p_neg, p_neu = loadmpqa('mpqa_polarity')
-    s_pos, s_neu = loadmpqas('mpqa_subjectivity')
+    p_pos, p_neg, p_neu = loadmpqa(fol + 'mpqa_polarity')
+    s_pos, s_neu = loadmpqas(fol + 'mpqa_subjectivity')
     tlist = []
     for msg in msgs_train:
         m = set(msg.split())
